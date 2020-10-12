@@ -24,6 +24,7 @@ def handle_client(conn, addr):
                 connected = False
 
             print(f"[{addr}] {msg}")
+            conn.send("Msg recieved".encode(FORMAT))
 
     conn.close()
 
