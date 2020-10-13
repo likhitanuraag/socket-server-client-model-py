@@ -42,3 +42,10 @@ def start():
 
 print("[STARTING] server is starting...")
 start()
+
+
+#basic troubleshoot log in ec2 ubuntu instance
+'''
+sudo netstat -nlp | grep 5050
+sudo kill -9 26748
+'''
