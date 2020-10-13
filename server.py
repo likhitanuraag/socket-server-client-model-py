@@ -3,7 +3,8 @@ import threading
 
 HEADER = 64
 PORT = 5050
-#SERVER = socket.gethostbyname(socket.gethostname())
+
+#SERVER = socket.gethostbyname(socket.gethostname())   #this also works in EC2, when all the traffic is allowed
 # EC2 public ip
 SERVER = socket.gethostbyaddr('3.104.1.113')[0]
 ADDR = (SERVER, PORT)
