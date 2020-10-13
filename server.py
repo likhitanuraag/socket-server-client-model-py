@@ -3,7 +3,9 @@ import threading
 
 HEADER = 64
 PORT = 5050
-SERVER = socket.gethostbyname(socket.gethostname())
+#SERVER = socket.gethostbyname(socket.gethostname())
+# EC2 public ip
+SERVER = socket.gethostbyaddr('3.104.1.113')[0]
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = '!DISCONNECT'

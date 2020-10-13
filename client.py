@@ -4,7 +4,8 @@ HEADER = 64
 PORT = 5050
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = '!DISCONNECT'
-SERVER = "172.31.64.1"
+#public ip of AWS EC2 instance
+SERVER = '3.104.1.113'
 ADDR = (SERVER, PORT)
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -20,5 +21,5 @@ def send(msg):
     print(client.recv(2048).decode(FORMAT))
 
 send("Hello World!")
-input()
+send(input("type: "))
 send(DISCONNECT_MESSAGE)
