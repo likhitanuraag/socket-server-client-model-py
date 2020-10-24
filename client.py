@@ -21,5 +21,4 @@ def send(msg):
     print(client.recv(2048).decode(FORMAT))
 
 send("Hello World from spyder!")
-send(input("type: "))
 send(DISCONNECT_MESSAGE)
